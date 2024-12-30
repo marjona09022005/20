@@ -2,8 +2,8 @@ import streamlit as st
 import pickle
 import numpy as np
 model_path = 'model.pkl'
-with open(model_path, 'rb') as file:
-     model = pickle.load(file)
+with open('model.pkl', 'wb') as file:
+ model = pickle.load(file)
 bio_features = ["Pregnancies","Glucose","BloodPressure","SkinThickness","Insulin","DiabetesPedigreeFunction" ,"Age", "BMI"]
 result_mapping = {
 0: "Donor (Sog'lom)",
